@@ -56,6 +56,8 @@ someUserInterface.OnMouseClick(func(x, y int) {
 })
 ```
 
+Aside from the `SimilarityDot` function, there is also a `SimilarityDistance` function. Both use different approaches to measure similarity and it might be worth the effort to try both and see which works best for the problem at hand.
+
 ## Limitations
 
 - **The implementation uses a hardcoded sampling resolution of 64** - the `protractor` paper mentions 32 as a good pick. Here 64 is used to be on the safe side.

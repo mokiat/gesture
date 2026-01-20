@@ -1,5 +1,9 @@
 # gesture
 
+[![Go Reference](https://pkg.go.dev/badge/github.com/mokiat/gesture.svg)](https://pkg.go.dev/github.com/mokiat/gesture)
+![Build Status](https://github.com/mokiat/gesture/workflows/Go/badge.svg)
+[![Go Report Card](https://goreportcard.com/badge/github.com/mokiat/gesture)](https://goreportcard.com/report/github.com/mokiat/gesture)
+
 A gesture recognition library written in [Go](https://go.dev/) that is based on the `$1`, `$P`, and `protractor` algorithm papers, with some small modifications.
 
 For the curious, make sure to check the following papers (especially the protractor one):

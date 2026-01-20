@@ -38,8 +38,11 @@ func (p Path) Length() float64 {
 // ResampleIter returns an iterator that yields a specified number of points
 // evenly distributed along the path.
 func (p Path) ResampleIter(pointCount int) iter.Seq[dprec.Vec2] {
-	if pointCount <= 1 {
-		panic("at least two points are required for resampling")
+	if len(p) < 2 {
+		panic("path must contain at least two points")
+	}
+	if pointCount < 2 {
+		panic("cannot resample to less than two points")
 	}
 	return func(yield func(dprec.Vec2) bool) {
 		targetSegmentLength := p.Length() / float64(pointCount-1)

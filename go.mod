@@ -5,6 +5,7 @@ go 1.25.3
 tool github.com/onsi/ginkgo/v2/ginkgo
 
 require (
+	github.com/mokiat/gog v0.21.0
 	github.com/mokiat/gomath v0.15.0
 	github.com/onsi/ginkgo/v2 v2.27.5
 	github.com/onsi/gomega v1.38.2
